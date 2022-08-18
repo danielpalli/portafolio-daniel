@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <img id="icon-name" src="./assets/images/icon.png" alt="">
+          <span id="perfil-name">Palli, Daniel</span>
+        </div>
+        <div class="col d-flex justify-content-end pt-2">
+          <ion-icon class="p-1" name="logo-instagram"></ion-icon>
+          <ion-icon class="p-1" name="logo-facebook"></ion-icon>
+          <ion-icon class="p-1" name="logo-twitter"></ion-icon>
+          <ion-icon class="p-1" name="log-in-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="border rounded">
+        <img src="./assets/images/banner.jpg" id="banner" class="img-fluid rounded" alt="Responsive image">
+        <div class="contenedor-info">
+          <div id="img-edit">
+            <img id="perfil-image" src="./assets/images/perfil.jpg" class="rounded-circle" alt="">
+            <ion-icon class="edit-icon" name="pencil-outline"></ion-icon>
+          </div>
+          <div class="informacion">
+            <h1>Daniel Palli</h1>
+            <p>estudiante ingeniería en sistemas de información en UTN</p>
+            <p>Buenos Aires(Argentina) <a href="#">Información de contacto</a></p>
+          </div>
+          <div class="mb-2">
+            <button type="button" class="btn btn-primary">Tengo interes en</button>
+            <button type="button" class="btn btn-secondary">Añadir Sección</button>
+            <button type="button" class="btn btn-secondary">Más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded mt-1">
+        <div class="contenedor-info">
+          <h1>Acerca de</h1>
+          <p>Estudiante de ingieria en sistemas, apasionado por la tecnologia.</p>
+        </div>
+      </div>
+
+      <div class="border rounded mt-1">
+        <div class="contenedor-info">
+          <h1>Experiencia</h1>
+          <p>Estudiante de ingieria en sistemas, apasionado por la tecnologia.</p>
+        </div>
+      </div>
+
+      <div class="border rounded mt-1">
+        <div class="contenedor-info">
+          <h1>Educación</h1>
+          <p>Estudiante de ingieria en sistemas, apasionado por la tecnologia.</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
