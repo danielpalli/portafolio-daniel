@@ -1,1 +1,10 @@
-<p>skills works!</p>
+<div class="flex h-screen mx-20 animate__animated animate__pulse animate__faster">
+  <div>
+
+    <p class="text-cyan-400 text-xl font-bold py-2">Habilidades:</p>
+
+    <ul *ngFor="let skill of habilidad">
+      <li class="text-white font-bold">{{ skill.nombre }}</li>
+    </ul>
+  </div>
+</div>

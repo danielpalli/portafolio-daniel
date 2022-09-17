@@ -17,5 +17,6 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     ContactoComponent
   ],
   imports: [CommonModule, DashboardRoutingModule],
+  exports: [InicioComponent, SobreMiComponent, SkillsComponent, ProyectosComponent, ContactoComponent]
 })
 export class DashboardModule {}
