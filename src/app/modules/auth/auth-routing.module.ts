@@ -3,13 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from '../dashboard/pages/inicio/inicio.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    children: [
-      { path: 'login', component: InicioComponent },
-      { path: '**', redirectTo: 'login' },
-    ],
-  },
 ];
 
 @NgModule({

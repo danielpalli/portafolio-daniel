@@ -11,5 +11,7 @@ export class SobreMiComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  descargarCv(){
+    console.log("Descargando...");
+  }
 }
