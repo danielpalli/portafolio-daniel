@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
+import SwiperCore, { Autoplay, Pagination } from "swiper";
 
-SwiperCore.use([Autoplay, Pagination, Navigation]);
+SwiperCore.use([Autoplay, Pagination]);
 @Component({
   selector: 'app-carousel-tecnologias',
   templateUrl: './carousel-tecnologias.component.html',
