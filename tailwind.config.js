@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
-  content: ["./src/**/*.{html,ts}", "./node_modules/flowbite/**/*.js"],
+  content: ["./src/**/*.{html,ts}"],
   theme: {
     screens: {
       sm: { min: "320px", max: "767px" },
@@ -25,5 +25,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [],
 };

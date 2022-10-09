@@ -3,7 +3,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "animate.css";
-@import "aos/dist/aos.css";
 @import 'swiper/scss';
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
@@ -15,4 +14,8 @@ app-footer {
   @media (max-width: 1200px) {
     position: relative;
   }
+}
+
+body {
+  background-image: url(../src/assets/fondo.png);
 }

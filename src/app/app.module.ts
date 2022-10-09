@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { SharedModule } from './shared/shared.module';
-import { SwiperModule } from 'swiper/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { SwiperModule } from 'swiper/angular';
     AppRoutingModule,
     SharedModule,
     DashboardModule,
-    SwiperModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

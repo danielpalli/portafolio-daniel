@@ -9,6 +9,8 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CarouselTecnologiasComponent } from './components/carousel-tecnologias/carousel-tecnologias.component';
 import { SwiperModule } from 'swiper/angular';
+
+
 @NgModule({
   declarations: [
     InicioComponent,

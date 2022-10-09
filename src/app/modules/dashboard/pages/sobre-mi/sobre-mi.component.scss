@@ -1,0 +1,16 @@
+.text-estilo {
+
+  //letra sombra interna
+  text-shadow: 0 0 3px #414141, 0 0 5px #444343;
+
+
+
+}
+
+.degrade-radial {
+
+    //degrade radial ovalado opacidad
+    background: radial-gradient(ellipse at center, rgba(73, 72, 72, 0.5) 0%, rgba(22, 21, 21, 0.5) 100%);
+
+
+}

@@ -34,12 +34,6 @@ export class CarouselTecnologiasComponent implements OnInit {
       ancho: 'w-20',
     },
     {
-      nombre: 'php',
-      img: '../../../../../assets/tecnologias/php.png',
-      altura: 'h-20',
-      ancho: 'w-28',
-    },
-    {
       nombre: 'nodejs',
       img: '../../../../../assets/tecnologias/node.png',
       altura: 'h-20',
