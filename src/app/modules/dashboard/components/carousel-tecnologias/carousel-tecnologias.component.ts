@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import SwiperCore, { Autoplay, Pagination } from "swiper";
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import SwiperCore, { Autoplay, Pagination } from 'swiper';
 
 SwiperCore.use([Autoplay, Pagination]);
 @Component({

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SwiperComponent } from "swiper/angular";
+import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+SwiperCore.use([EffectCoverflow, Pagination]);
 @Component({
   selector: 'app-sobre-mi',
   templateUrl: './sobre-mi.component.html',

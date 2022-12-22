@@ -1,0 +1,18 @@
+.imagen-fondo {
+  height: 25vh;
+
+}
+
+
+.degrade-radial {
+  background: radial-gradient(ellipse at center, rgb(255, 255, 255) 0%, rgb(209, 209, 209) 100%);
+}
+
+.efecto-movimiento {
+clip-path: circle(25% at center left);
+transition-property: clip-path;
+transition-duration: 1s;
+&:hover {
+ clip-path: circle(100% at 50% 50%);
+}
+}

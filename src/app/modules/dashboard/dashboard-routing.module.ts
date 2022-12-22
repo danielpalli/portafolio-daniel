@@ -10,12 +10,12 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      {path: 'inicio', component: InicioComponent},
+      {path: '', component: InicioComponent},
       {path: 'sobre-mi', component: SobreMiComponent},
       {path: 'skills', component: SkillsComponent},
       {path: 'proyectos', component: ProyectosComponent},
       {path: 'contacto', component: ContactoComponent},
-      {path: '**', redirectTo: 'inicio'}]
+      {path: '**', redirectTo: ''}]
   }
 ];
 

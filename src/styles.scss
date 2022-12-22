@@ -7,15 +7,29 @@
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
 
-app-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  @media (max-width: 1200px) {
-    position: relative;
-  }
+*{
+  // background-color: #1E2429;
+  color:black;
 }
 
-body {
-  background-image: url(../src/assets/fondo.png);
+#icon-name {
+  width: 45px;
+  height: 45px;
+}
+
+#perfil-name {
+  margin-left: 5px;
+}
+#perfil-image {
+  width: 100px;
+  height: 100px;
+  margin-top: -30px;
+  margin-left: 30px;
+}
+#banner {
+  width: 100%;
+}
+.contenedor-info {
+  font-size: 0.8em;
+  margin-left: 20px;
 }
