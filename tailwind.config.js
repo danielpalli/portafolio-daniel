@@ -16,7 +16,7 @@ module.exports = {
       xl: { min: "1280px", max: "1535px" },
       // => @media (min-width: 1280px and max-width: 1535px) { ... }
 
-      "2xl": { min: "1536px" },
+      "2xl": { min: "1236px" },
       // => @media (min-width: 1536px) { ... }
       smUp: { max: "200px" },
       // => @media (min-width: 1536px) { ... }

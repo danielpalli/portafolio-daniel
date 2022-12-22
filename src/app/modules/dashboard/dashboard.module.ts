@@ -9,6 +9,9 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CarouselTecnologiasComponent } from './components/carousel-tecnologias/carousel-tecnologias.component';
 import { SwiperModule } from 'swiper/angular';
+import { MiInfoComponent } from './components/mi-info/mi-info.component';
+import { EducacionInfoComponent } from './components/educacion-info/educacion-info.component';
+import { CursosInfoComponent } from './components/cursos-info/cursos-info.component';
 
 
 @NgModule({
@@ -19,6 +22,9 @@ import { SwiperModule } from 'swiper/angular';
     ProyectosComponent,
     ContactoComponent,
     CarouselTecnologiasComponent,
+    MiInfoComponent,
+    EducacionInfoComponent,
+    CursosInfoComponent,
   ],
   imports: [
     CommonModule,
