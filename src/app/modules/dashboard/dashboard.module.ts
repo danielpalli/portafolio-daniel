@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { InicioComponent } from './pages/inicio/inicio.component';
@@ -12,7 +13,7 @@ import { SwiperModule } from 'swiper/angular';
 import { MiInfoComponent } from './components/mi-info/mi-info.component';
 import { EducacionInfoComponent } from './components/educacion-info/educacion-info.component';
 import { CursosInfoComponent } from './components/cursos-info/cursos-info.component';
-
+import { CardProyectoComponent } from './components/card-proyecto/card-proyecto.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,13 @@ import { CursosInfoComponent } from './components/cursos-info/cursos-info.compon
     MiInfoComponent,
     EducacionInfoComponent,
     CursosInfoComponent,
+    CardProyectoComponent,
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SwiperModule
+    SwiperModule,
+    ReactiveFormsModule,
   ],
   exports: [
     InicioComponent,

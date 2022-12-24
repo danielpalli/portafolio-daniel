@@ -1,14 +1,58 @@
-<div class="flex h-screen mx-20 animate__animated animate__pulse animate__faster">
-  <div class="w-1/2 flex flex-col p-40 items-center ">
-    <p class="text-white font-bold ">
-      Hola, <span class="text-cyan-400">Soy Daniel Palli</span>
-    </p>
-    <p class="text-white text-3xl font-bold">FullStack Developer.</p>
-  </div>
-  <div class="w-1/2 flex flex-col p-40 items-center">
-    <img src="../../../../../assets/" alt="">
-  </div>
+<div
+  class="flex justify-center bg-slate-200 mt-20"
 
-</div>
-<div class="wave">
+>
+  <div
+    class="mx-32 shadow-lg rounded-md w-96 my-20 flex flex-col justify-center bg-white"
+  >
+    <p class="text-yellow-500 text-center text-4xl font-bold text-estilo">
+      Contactame
+    </p>
+    <form
+      autocomplete="off"
+      class="mx-5"
+      [formGroup]="formContacto"
+      (ngSubmit)="enviarFormulario()"
+    >
+      <div class="flex flex-col justify-center">
+        <label class="text-sm font-bold text-estilo"
+          >Nombre</label
+        >
+        <input
+          type="text"
+          class="border-2 border-gray-300 rounded-md shadow-sm p-1"
+          formControlName="nombre"
+        />
+      </div>
+      <div class="flex flex-col justify-center">
+        <label class="text-sm font-bold text-estilo"
+          >Correo</label
+        >
+        <input
+          type="text"
+          class="border-2 border-gray-300 rounded-md shadow-sm p-1"
+          formControlName="correo"
+        />
+      </div>
+      <div class="flex flex-col justify-center">
+        <label class="text-sm font-bold text-estilo"
+          >Mensaje</label
+        >
+        <textarea
+          class="border-2 border-gray-300 rounded-md shadow-sm p-1"
+          formControlName="mensaje"
+          style="resize: none;"
+        ></textarea>
+      </div>
+
+      <div class="flex justify-center my-2">
+        <button
+          type="submit"
+          class="bg-yellow-300 py-1 px-2 rounded shadow font-bold text-sm"
+        >
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
 </div>

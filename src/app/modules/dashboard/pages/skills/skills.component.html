@@ -1,13 +1,23 @@
-<div class="flex mx-32">
-  <div class="w-1/2">
-    <app-carousel-tecnologias></app-carousel-tecnologias>
-  </div>
-  <div class="w-1/2">
-
-    <p class=" text-xl font-bold py-2">Habilidades:</p>
-
-    <ul *ngFor="let skill of habilidad">
-      <li class=" font-bold">{{ skill.nombre }}</li>
-    </ul>
+<div class="my-20" style="background-color: #000b76;">
+  <div class="flex mx-32" style="height: calc(100vh - 520px)">
+    <div class="w-1/2 flex items-center">
+      <app-carousel-tecnologias></app-carousel-tecnologias>
+    </div>
+    <div class="w-1/2 flex items-center">
+      <div>
+        <p class="text-amber-300 text-4xl font-bold">Habilidades</p>
+        <div class="py-5 flex flex-col">
+          <p class="text-xl font-bold text-white">
+            HTML - CSS - JavaScript -TypeScript - NodeJs - Angular
+          </p>
+          <p class="text-xl font-bold text-white">
+            React - React Native - Laravel - PHP - Java - C/C++ - C#
+          </p>
+          <p class="text-xl font-bold text-white">
+            MongoDB - MySQL - SqlServer - Git - GitHub
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
