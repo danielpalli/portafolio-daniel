@@ -3,16 +3,16 @@
     <div
       class="container flex flex-wrap justify-between items-center mx-auto animate__animated animate__fadeIn"
     >
-      <a routerLink="/inicio" class="flex items-center cursor-pointer">
+      <button (click)="irA('inicio')" class="flex items-center cursor-pointer">
         <img src="../../../../assets/logo.png" class="mr-1 h-3" alt="logo" />
         <span
           class="self-center text-xl font-semibold whitespace-nowrap text-zinc-200 transition-colors duration-300 hover:text-zinc-400"
           >Daniel Palli</span
         >
-      </a>
+      </button>
       <div class="py-2.5 sm:hidden">
         <button
-          (click)="irA('home')"
+          (click)="irA('inicio')"
           class="mr-2 transition-colors duration-300 hover:text-gray-400"
           routerLink="/"
           [routerLinkActive]="['text-zinc-500']"
