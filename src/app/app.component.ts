@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
     // animation triggers go here
   ],
 })
-export class AppComponent {
-  title = 'portafolio-FrontEnd';
+export class AppComponent implements OnChanges{
+  destino?: string;
 
   ngOnInit() {}
+
+  ngOnChanges(changes: SimpleChanges): void {
+    document.getElementById(`${this.destino}`)?.scrollIntoView;
+  }
 
 }
