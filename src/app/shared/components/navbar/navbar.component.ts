@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { IrAService } from 'src/app/modules/dashboard/services/ir-a.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,15 +9,13 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  @Output() destino = new EventEmitter<string>();
-
-  constructor(private router: Router) {}
+  constructor(private router: Router, private irAService:IrAService) {}
 
   ngOnInit(): void {}
 
   irA(destino:string){
-    this.destino.emit(destino);
-    console.log(this.destino.emit(destino));
+
+    this.irAService.irAEfecto(destino);
   }
 
 

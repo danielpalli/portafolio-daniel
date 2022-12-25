@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IrAService } from '../../services/ir-a.service';
 
 @Component({
   selector: 'app-main',
