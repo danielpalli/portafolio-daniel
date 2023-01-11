@@ -1,85 +1,27 @@
 <img
   src="../../../../../assets/fondo01.jpg"
-  class="w-full imagen-fondo sm:w-full"
+  class="w-full imagen-fondo"
   alt=""
 />
-<div class="animate__animated animate__pulse animate__faster">
-  <div class="w-full flex sm:flex-col" style="height: calc(100vh - 285px)">
-    <div
-      class="flex flex-col justify-center w-5/12"
-    >
-      <div class="flex flex-col items-center">
-        <p class="text-black font-bold text-3xl">
-          Hola, <span class="text-amber-400">Soy Daniel Palli</span>
-        </p>
+<div
+  class="w-full flex sm:flex-col sm:items-center sm:mt-10 h-[70vh]">
+  <!-- Bloque 1 -->
+  <div class="flex flex-col justify-center w-5/12">
 
-        <p class="text-black text-5xl sm:text-2xl font-bold">
-          FullStack Developer.
-        </p>
-      </div>
+    <div class="flex flex-col text-center">
+      <p class="text-black font-bold text-3xl md:text-2xl sm:text-xl">
+        Hola, <span class="text-amber-400">Soy Daniel Palli</span>
+      </p>
 
-      <div class="flex flex-row justify-center mx-auto mt-10">
-        <ul class="flex flex-row" *ngFor="let red of redes">
-          <li>
-            <a href="{{ red.url }}"
-              ><img class="w-10 h-10 mx-2" src="{{ red.img }}" alt=""
-            /></a>
-          </li>
-        </ul>
-      </div>
+      <p class="text-black text-5xl sm:text-2xl lg:text-4xl md:text-3xl font-bold">
+        FullStack Developer.
+      </p>
     </div>
+    <app-redes></app-redes>
+  </div>
 
-    <div class="w-7/12 grid grid-cols-3 gap-3 mx-28 my-32 2xl:mx-14">
-        <div >
-          <div
-            class="flex item-start efecto-movimiento shadow-md rounded-md p-4"
-          >
-            <div class="flex flex-row items-center">
-              <div
-                class="w-10 h-10 rounded-full flex justify-center items-center"
-              >
-                <i class="fa-solid fa-computer"></i>
-              </div>
-              <div class="mx-2">
-                <p class="text-xl text-amber-700">Web-Development</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex items-center">
-          <div
-             class="flex item-start efecto-movimiento shadow-md rounded-md p-4 w-full"
-          >
-            <div class="flex flex-row items-center">
-              <div
-                class="w-10 h-10 rounded-full flex justify-center items-center"
-              >
-                <i class="fa-solid fa-flask"></i>
-              </div>
-              <div class="mx-2">
-                <p class="text-xl text-amber-700">Unit Test</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-end">
-          <div
-          class="flex item-start efecto-movimiento shadow-md rounded-md p-4 w-full"
-          >
-            <div class="flex flex-row items-center">
-              <div
-                class="w-10 h-10 rounded-full flex justify-center items-center"
-              >
-                <i class="fa-solid fa-object-group"></i>
-              </div>
-              <div class="mx-2">
-                <p class="text-xl text-amber-700">Design</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+  <!-- Bloque 2 -->
+  <div class="w-7/12">
+    <app-habilidades></app-habilidades>
   </div>
 </div>

@@ -15,6 +15,8 @@ import { EducacionInfoComponent } from './components/educacion-info/educacion-in
 import { CursosInfoComponent } from './components/cursos-info/cursos-info.component';
 import { CardProyectoComponent } from './components/card-proyecto/card-proyecto.component';
 import { MainComponent } from './pages/main/main.component';
+import { RedesComponent } from './components/redes/redes.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { MainComponent } from './pages/main/main.component';
     CursosInfoComponent,
     CardProyectoComponent,
     MainComponent,
+    RedesComponent,
+    HabilidadesComponent,
   ],
   imports: [
     CommonModule,

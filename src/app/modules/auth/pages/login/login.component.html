@@ -1,0 +1,27 @@
+<h1 class="text-3xl text-center mb-1">Iniciar sesion</h1>
+<form class="flex flex-col w-72" [formGroup]="loginForm" (ngSubmit)="login()" autocomplete="off">
+  <label class="px-2 text-lg" for="">Correo:</label>
+  <input
+    class="w-full rounded shadow p-2"
+    type="email"
+    placeholder="Ingrese su correo"
+    formControlName="correo"
+  />
+
+  <label class="px-2 mt-2 text-lg" for="">Contraseña:</label>
+  <input
+    class="w-full rounded shadow p-2"
+    type="password"
+    placeholder="Ingrese su contrase"
+    formControlName="password"
+  />
+
+  <div class="flex justify-center mt-3">
+    <button
+      type="submit"
+      class="px-2 py-1 bg-yellow-300 rounded shadow uppercase"
+    >
+      Ingresar
+    </button>
+  </div>
+</form>

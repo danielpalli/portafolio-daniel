@@ -15,12 +15,11 @@ module.exports = {
 
       xl: { min: "1280px", max: "1535px" },
       // => @media (min-width: 1280px and max-width: 1535px) { ... }
-
       "2xl": { min: "1236px" },
       // => @media (min-width: 1536px) { ... }
-      smUp: { max: "200px" },
+      upMd: { max: "200px" },
       // => @media (min-width: 1536px) { ... }
-      mdUp: { min: "767px" },
+      lgUp: { min: "1024px" },
       // => @media (min-width: 1536px) { ... }
     },
     extend: {},

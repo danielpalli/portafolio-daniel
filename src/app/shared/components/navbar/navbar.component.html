@@ -4,13 +4,14 @@
       class="container flex flex-wrap justify-between items-center mx-auto animate__animated animate__fadeIn"
     >
       <button (click)="irA('inicio')" class="flex items-center cursor-pointer">
-        <img src="../../../../assets/logo.png" class="mr-1 h-3" alt="logo" />
+        <img src="../../../../assets/logo.png" class="mr-1 h-3 mt-0.5" alt="logo" />
         <span
           class="self-center text-xl font-semibold whitespace-nowrap text-zinc-400 transition-colors duration-300 hover:text-zinc-500"
           >Daniel Palli</span
         >
       </button>
-      <div class="py-2.5 sm:hidden">
+      <div class="py-2.5 lgUp:hidden">menu</div>
+      <div class="py-2.5 md:hidden sm:hidden">
         <button
           (click)="irA('inicio')"
           class="mr-2 transition-colors duration-300 hover:text-gray-400"
