@@ -1,9 +1,23 @@
 .imagen-fondo {
   height: 25vh;
-
 }
 
-
 .degrade-radial {
-  background: radial-gradient(ellipse at center, rgb(255, 255, 255) 0%, rgb(209, 209, 209) 100%);
+  background: radial-gradient(
+    ellipse at center,
+    rgb(255, 255, 255) 0%,
+    rgb(209, 209, 209) 100%
+  );
+}
+
+.pantalla-mobile {
+  height: calc(100vh - 240px);
+
+  @media (min-width: 360px) and (max-width: 374px) {
+    height: calc(100vh - 180px);
+  }
+
+  @media (min-width: 375px) and (max-width: 767px) {
+    height: calc(100vh - 200px);
+  }
 }
