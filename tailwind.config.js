@@ -21,6 +21,7 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
       lgUp: { min: "1024px" },
       // => @media (min-width: 1536px) { ... }
+      smUp: { min: "767px" },
     },
     extend: {},
   },
