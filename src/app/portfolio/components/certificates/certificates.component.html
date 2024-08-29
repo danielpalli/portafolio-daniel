@@ -1,0 +1,30 @@
+<section class="px-5">
+  <h1 class="text-lg font-semibold">Certificados</h1>
+
+  <ul class="text-sm space-y-2">
+    @for (item of data(); track $index) {
+      <li class="w-full">
+        <div class="flex justify-between">
+          <h3 class="font-semibold">{{ item.name }}</h3>
+          <span class="text-gray-700">{{ item.date }}</span>
+        </div>
+        <span>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+          aspernatur numquam repudiandae facilis ut ipsa assumenda modi
+          accusantium officiis suscipit blanditiis non, consequatur recusandae
+          unde quasi incidunt eius laudantium nisi.
+        </span>
+        <div class="pt-2">
+
+          <a
+            target="_blank"
+            [href]="item.url"
+            class="bg-gray-500 text-white px-1 shadow-md rounded-md border border-gray-600 my-2 text-center"
+            >
+            Link al Certificado
+          </a>
+        </div>
+      </li>
+    }
+  </ul>
+</section>

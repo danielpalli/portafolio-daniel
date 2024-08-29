@@ -1,0 +1,37 @@
+<section class="px-5">
+  <h1 class="text-lg font-semibold">Proyectos</h1>
+
+  <ul class="text-sm flex gap-2 flex-wrap mx-auto">
+    @for (item of data(); track $index) {
+      <li class="rounded-md shadow-md p-2 w-52">
+        <h3 class="font-semibold">{{ item.name }}</h3>
+        <span class="text-xs">
+          {{ item.description }}
+        </span>
+        <div class="flex justify-between gap-x-2">
+          <a
+            [href]="item.repository"
+            class="bg-gray-500 text-white px-1 shadow-md rounded-md border border-gray-600 my-2 w-full text-center"
+          >
+            Código
+          </a>
+          <a
+            [href]="item.url"
+            class="bg-gray-500 text-white px-1 shadow-md rounded-md border border-gray-600 my-2 w-full text-center"
+          >
+            Demo
+          </a>
+        </div>
+        <div class="flex items-center pr-1">
+          <ul
+            class="flex gap-x-1 text-[0.6rem] bg-gray-300 rounded-lg px-2 shadow-md"
+          >
+            @for (skill of item.stack; track $index) {
+              <li>{{ skill }} {{ $last ? '' : ',' }}</li>
+            }
+          </ul>
+        </div>
+      </li>
+    }
+  </ul>
+</section>

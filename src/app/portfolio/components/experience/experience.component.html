@@ -1,0 +1,26 @@
+<section class="px-5">
+  <h1 class="text-lg font-semibold">Experiencia Laboral</h1>
+
+  <ul class="text-sm">
+    <li class="">
+      <div class="flex justify-between">
+        <h3 class="font-semibold">{{ data()?.company }}</h3>
+        <span class="text-gray-700">{{ data()?.startDate }} - {{ data()?.endDate }}</span>
+      </div>
+
+      <p class="text-xs font-mono">{{ data()?.position }}</p>
+
+      <p>{{ data()?.summary }}</p>
+
+      <div class="flex items-center mt-2">
+        <ul
+          class="flex gap-x-1 text-[0.6rem] bg-gray-300 rounded-lg px-2 shadow-md"
+        >
+          @for (item of data()?.stack; track $index) {
+            <li>{{ item }}{{ $last ? '' : ',' }}</li>
+          }
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>

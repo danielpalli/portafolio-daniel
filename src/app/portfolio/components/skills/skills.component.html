@@ -1,0 +1,13 @@
+<section class="px-5">
+  <h1 class="text-lg font-semibold">Habilidades</h1>
+
+  <ul class="flex items-center gap-x-1 gap-y-2 flex-wrap">
+    @for (item of data(); track $index) {
+    <li
+      class="flex gap-x-1 text-[0.6rem] bg-gray-300 rounded-lg px-2 shadow-md"
+    >
+      <span>{{ item?.name }}</span>
+    </li>
+    }
+  </ul>
+</section>
