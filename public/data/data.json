@@ -106,8 +106,50 @@
     {
       "name": "Dicsys Academy",
       "date": "2023",
-      "description": " ",
+      "description": "En la academia, aprendí SQL, QA, Scrum, Testing y desarrollo transaccional. También desarrollé habilidades en análisis de datos, integración continua, automatización de pruebas y gestión de la calidad del software. Además, me familiaricé con metodologías ágiles y herramientas de colaboración en equipo.",
       "url": "https://drive.google.com/file/d/1l1Wl-NZwZyz1PQzzlUfeIrjd5Zt1S8is/view?usp=drive_link"
+    },
+    {
+      "name": "Besysoft Spring Boot Bootcamp",
+      "date": "2023",
+      "description": "En el bootcamp, aprendí a desarrollar aplicaciones web con Java Spring Boot y Hibernate.",
+      "url": "https://drive.google.com/file/d/19YnMRuxLD0OHjeHzkmYywRikks9AlE51/view"
+    },
+    {
+      "name": "Neoris Labs .Net - Angular",
+      "date": "2023",
+      "description": "En el Labs .Net - Angular, aprendí a desarrollar aplicaciones web con Angular y .Net.",
+      "url": "https://drive.google.com/file/d/19YnMRuxLD0OHjeHzkmYywRikks9AlE51/view"
+    },
+    {
+      "name": "Codo a Codo 4.0 - Especializacion en React",
+      "date": "2022",
+      "description": "En la especialización, aprendí a desarrollar aplicaciones web responsive con React, redux, bootstrap.",
+      "url": "https://drive.google.com/file/d/1LJjuYR51QaVr83JgeVo0eXhyt06uK-4z/view"
+    },
+    {
+      "name": "Coder House - Angular",
+      "date": "2022",
+      "description": "En el curso, aprendí a desarrollar aplicaciones web con Angular.",
+      "url": "https://www.coderhouse.com/ar/certificados/630a4ff2412d6302594b6016"
+    },
+    {
+      "name": "Codo a Codo 4.0 - Testing Qa de Calidad de Software",
+      "date": "2021",
+      "description": "En el curso, aprendí a realizar pruebas de software, automatización de pruebas, gestión de la calidad del software y metodologías ágiles.",
+      "url": "https://drive.google.com/file/d/1fvOGdfdLykOU9DZsp34NciC-bCoDt82-/view"
+    },
+    {
+      "name": "Neoris Bootcamp - Desarrollador Web Full Stack",
+      "date": "2021",
+      "description": "En el bootcamp, aprendí a desarrollar aplicaciones web con php, laravel para el backend y Angular para el frontend.",
+      "url": "https://sceu-utnba.bitrix24.es/pub/document/15263/e7d5f8e4e80d10c3f84b3b0f4e5799fb/"
+    },
+    {
+      "name": "Educacion It - Software Tester Qa",
+      "date": "2021",
+      "description": "En el curso, aprendí a realizar testing manual, gestión de la calidad del software y metodologías ágiles.",
+      "url": "https://www.educacionit.com/perfil/daniel-palli-538730/certificado/41204"
     }
   ],
   "languages": [
