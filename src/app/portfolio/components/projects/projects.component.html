@@ -1,9 +1,9 @@
 <section class="px-5">
   <h1 class="text-lg font-semibold">Proyectos</h1>
 
-  <ul class="text-sm flex gap-2 flex-wrap mx-auto">
+  <ul class="text-sm flex gap-2 md:flex-wrap md:mx-auto">
     @for (item of data(); track $index) {
-      <li class="rounded-md shadow-md p-2 w-52">
+      <li class="rounded-md shadow-md p-2 md:w-52 w-full">
         <h3 class="font-semibold">{{ item.name }}</h3>
         <span class="text-xs">
           {{ item.description }}
