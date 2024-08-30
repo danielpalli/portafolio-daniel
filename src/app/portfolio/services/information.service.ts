@@ -21,6 +21,7 @@ export class InformationService {
   constructor() {
     this.http
       .get(this.apiUrl)
+      .pipe(delay(2000))
       .subscribe((data) => {
         this.#state.set({
           loading: false,
