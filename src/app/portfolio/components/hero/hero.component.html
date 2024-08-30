@@ -26,9 +26,11 @@
       </button>
     </li>
     @for(profile of sanitizedProfiles(); track $index){
-    <li class="rounded-sm shadow-md border border-1 border-gray-500/30 p-1">
-      <a [href]="profile.url" target="_blank">
-        <span [innerHTML]="profile!.svg"></span>
+    <li>
+      <a [href]="profile.url" target="_blank" >
+        <button class="rounded-sm shadow-md border border-1 border-gray-500/30 p-1">
+          <span [innerHTML]="profile!.svg"></span>
+        </button>
       </a>
     </li>
     }
