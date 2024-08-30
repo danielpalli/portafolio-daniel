@@ -48,7 +48,7 @@
       "name": "Portafolio Personal",
       "description": "Esta página web fue desarrollada con Angular y Tailwind CSS.",
       "stack": ["Angular", "Tailwind CSS"],
-      "url": "https://project.com/",
+      "url": "https://portafolio-daniel-ten.vercel.app",
       "repository": "https://github.com/danielpalli/portafolio-daniel"
     }
   ],
