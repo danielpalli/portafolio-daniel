@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { computed, inject, Injectable, signal } from '@angular/core';
 import { environment } from '../../../environments/environment';
-import { delay } from 'rxjs';
+import { delay, Observable } from 'rxjs';
+import { Information } from '../interfaces/information.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -30,7 +31,7 @@ export class InformationService {
       });
   }
 
-  getInformation() {
+  getInformation(): any {
     return this.http.get(this.apiUrl);
   }
 }
