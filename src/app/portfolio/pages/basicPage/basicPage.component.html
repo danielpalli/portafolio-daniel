@@ -7,11 +7,11 @@
       <hr class="border-black" />
       <app-experience />
       <hr class="border-black" />
-      <app-projects />
+      <app-projects [projects]="data().projects" />
       <hr class="border-black" />
       <app-skills [skills]="data().skills" />
       <hr class="border-black" />
-      <app-certificates />
+      <app-certificates [certificates]="data().certificates" />
     </div>
   </div>
 </div>
