@@ -3,13 +3,13 @@
     <div class="space-y-3">
       <app-hero />
       <hr class="border-black" />
-      <app-about [about]="data()!.basics"/>
+      <app-about [about]="data().basics"/>
       <hr class="border-black" />
       <app-experience />
       <hr class="border-black" />
       <app-projects />
       <hr class="border-black" />
-      <app-skills />
+      <app-skills [skills]="data().skills" />
       <hr class="border-black" />
       <app-certificates />
     </div>
