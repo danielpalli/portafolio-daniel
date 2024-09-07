@@ -17,6 +17,38 @@ import { InformationService } from '../../services/information.service';
 import { CertificatesComponent } from '../../components/certificates/certificates.component';
 import { Information } from '../../interfaces/information.interface';
 
+const intialState = {
+  basics: {
+    name: '',
+    label: '',
+    picture: '',
+    email: '',
+    url: '',
+    phone: '',
+    summary: '',
+    location: {
+      city: '',
+      countryCode: '',
+      country: '',
+    },
+    profiles: [],
+  },
+  skills: [],
+  works: [
+    {
+      company: '',
+      position: '',
+      website: '',
+      startDate: '',
+      endDate: '',
+      summary: '',
+      stack: [],
+    },
+  ],
+  projects: [],
+  certificates: [],
+};
+
 @Component({
   selector: 'app-basic-page',
   standalone: true,
@@ -37,37 +69,7 @@ import { Information } from '../../interfaces/information.interface';
 export default class BasicPageComponent {
   private informationService = inject(InformationService);
 
-  public data = signal<Information>({
-    basics: {
-      name: '',
-      label: '',
-      picture: '',
-      email: '',
-      url: '',
-      phone: '',
-      summary: '',
-      location: {
-        city: '',
-        countryCode: '',
-        country: '',
-      },
-      profiles: [],
-    },
-    skills: [],
-    works: [
-      {
-        company: '',
-        position: '',
-        website: '',
-        startDate: '',
-        endDate: '',
-        summary: '',
-        stack: [],
-      },
-    ],
-    projects: [],
-    certificates: [],
-  });
+  public data = signal<Information>(intialState);
 
   constructor() {
     this.informationService.getInformation().subscribe((data: any) => {
