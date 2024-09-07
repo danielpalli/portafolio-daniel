@@ -1,11 +1,11 @@
 <div class="border rounded-lg p-2 shadow-lg">
   <div class="border rounded-lg py-10">
     <div class="space-y-3">
-      <app-hero />
+      <app-hero [basics]="data().basics"/>
       <hr class="border-black" />
       <app-about [about]="data().basics"/>
       <hr class="border-black" />
-      <app-experience />
+      <app-experience [works]="data().works"/>
       <hr class="border-black" />
       <app-projects [projects]="data().projects" />
       <hr class="border-black" />

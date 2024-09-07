@@ -54,7 +54,17 @@ export default class BasicPageComponent {
       profiles: [],
     },
     skills: [],
-    works: [],
+    works: [
+      {
+        company: '',
+        position: '',
+        website: '',
+        startDate: '',
+        endDate: '',
+        summary: '',
+        stack: [],
+      },
+    ],
     projects: [],
     certificates: [],
   });

@@ -29,7 +29,7 @@ export interface Location {
 export interface Profile {
   network: string;
   url: string;
-  svg: string;
+  icon: string;
 }
 
 export interface Information {
