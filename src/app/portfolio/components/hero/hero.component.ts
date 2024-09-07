@@ -1,5 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  input,
+} from '@angular/core';
 import { Basics } from '../../interfaces/information.interface';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../../../shared/components/dialog/dialog.component';
@@ -18,17 +23,10 @@ export class HeroComponent {
   });
   public dialog = inject(MatDialog);
 
-  openDialog(info: string) {
-    if (info === 'phone') {
-      this.dialog.open(DialogComponent, {
-        data: this.data()?.phone,
-      });
-    }
-
-    if (info === 'email') {
-      this.dialog.open(DialogComponent, {
-        data: this.data()?.email,
-      });
+  openDialog(info: 'phone' | 'email') {
+    const data = this.data()?.[info];
+    if (data) {
+      this.dialog.open(DialogComponent, { data });
     }
   }
 }
