@@ -1,28 +1,33 @@
 <section class="px-5">
   <h1 class="text-lg font-semibold">Proyectos</h1>
 
-  <ul class="text-sm flex gap-2 md:flex-wrap md:mx-auto">
+  <ul class="text-sm flex gap-2 md:flex-wrap md:mx-auto flex-col sm:flex-row">
     @for (item of data(); track $index) {
-      <li class="rounded-md shadow-md p-2 md:w-52 w-full">
+      <li class="rounded-md shadow-md p-2 md:w-52 w-full h-full">
+
         <h3 class="font-semibold">{{ item.name }}</h3>
         <p class="text-xs">
           {{ item.description }}
         </p>
+
         <div class="flex justify-between gap-x-2">
           <a
             target="_blank"
             [href]="item.repository"
-            class="bg-gray-500 text-white px-1 shadow-md rounded-md border border-gray-600 my-2 w-full text-center"
+            class="bg-gray-500 text-white px-1 shadow-md rounded-md border border-gray-600 my-2 md:w-24 text-center w-full"
           >
             Código
           </a>
-          <a
+          @if (item.url) {
+            <a
             target="_blank"
             [href]="item.url"
-            class="bg-gray-500 text-white px-1 shadow-md rounded-md border border-gray-600 my-2 w-full text-center"
+            class="bg-gray-500 text-white px-1 shadow-md rounded-md border border-gray-600 my-2 md:w-24 text-center w-full"
           >
             Demo
           </a>
+          }
+
         </div>
         <div class="flex items-center pr-1">
           <ul
@@ -33,6 +38,8 @@
             }
           </ul>
         </div>
+
+
       </li>
     }
   </ul>
