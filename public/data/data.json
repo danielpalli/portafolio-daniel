@@ -27,6 +27,18 @@
   },
   "works": [
     {
+      "company": "VorHealth",
+      "position": "Desarrollador Frontend",
+      "website": "https://vorhealth-web.vercel.app/",
+      "startDate": "2024",
+      "endDate": "Actualidad",
+      "summary": "Desarrollo interfaces de usuario intuitivas, dinámicas y eficientes con Nextjs y Tailwind CSS",
+      "stack": [
+        "NextJs",
+        "Tailwind CSS"
+      ]
+    },
+    {
       "company": "UTN Buenos Aires",
       "position": "Desarrollador Full Stack",
       "website": "https://www.frba.utn.edu.ar",
@@ -50,6 +62,12 @@
       "stack": ["Angular", "Tailwind CSS"],
       "url": "https://portafolio-daniel-ten.vercel.app",
       "repository": "https://github.com/danielpalli/portafolio-daniel"
+    },
+    {
+      "name": "Coder House - BackEnd",
+      "description": "Proyecto personal desarrollado para proporcionar un backend para el curso de Frontend en CoderHouse, utilizando Node.js, Express y MongoDB. Implementa una API RESTful con manejo de base de datos, autenticación y rutas.",
+      "stack": ["NodeJs", "Express", "MongoDb"],
+      "repository": "https://github.com/danielpalli/backcursos"
     }
   ],
   "skills": [
@@ -72,6 +90,10 @@
     {
       "stars": "3",
       "name": "React"
+    },
+    {
+      "stars": "3",
+      "name": "NextJs"
     },
     {
       "stars": "5",
